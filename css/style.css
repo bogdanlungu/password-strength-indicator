@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+   background-color: #fff;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+   width: 500px;
+   padding: 20px;
+   background-color: #333;
+   border-radius: 5px;
+   margin: 10px auto auto auto;
+   color: #747474;
+   border: solid 2px #000;
+}
+form label {
+   font-size: 14px;
+   line-height: 30px;
+   width: 27%;
+   display: inline-block;
+   text-align: right;
+}
+.input-frame {
+   clear: both;
+   margin-bottom: 25px;
+   position: relative;
+}
+form input {
+   height: 30px;
+   width: 330px;
+   margin-left: 10px;
+   background-color: #191919;
+   border: solid 1px #404040;
+   padding-left: 10px;
+   color: #DB7400;
+}
+form input:hover {
+   background-color: #262626;
+}
+form input:focus {
+   border-color: #DB7400;
+}
+
+.password-strength {
+   position: absolute;
+   width: 150px;
+   height: 20px;
+   left: 69%;
+   top: 35px;
+   line-height: 20px;
+   border: solid 1px #191919;
+}
+.password-strength .inner {
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: red;
+}
+.password-strength .text {
+   font-size: 11px;
+   color: #FFF;
+   text-align: center;
+   position: relative;
+   z-index: 10;
+}
