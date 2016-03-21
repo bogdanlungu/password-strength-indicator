@@ -1,17 +1,19 @@
 $(document).ready(function(){
 
   $('.password').on("keyup", function(){
-     var strength = passwordStrength();
+     var password = $(".password");
+     if(password){
+       var strength = passwordStrength(password);
 
-     // display in form
-     $('.password-strength').css('background-color', strength.colour);
-     $('.password-strength .text').html(strength.level + " (<strong>" + strength.percent + "</strong>%)");
+       // display in form
+       $('.password-strength').css('background-color', strength.colour);
+       $('.password-strength .text').html(strength.level + " (<strong>" + strength.percent + "</strong>%)");
+     }
   });
 
 // Check the password strength and return object
-  function passwordStrength(){
+  function passwordStrength(password){
     var score = 0;
-    var password = $('.password');
 
     // Check length
     if (password.val().length > 6) {
